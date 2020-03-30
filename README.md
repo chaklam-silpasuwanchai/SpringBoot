@@ -2,7 +2,7 @@
 
 I have created a repository for demonstrating basic concepts of Spring Boot.
 
-This repository is served as a teaching materials for Software Architecture Design which will focus on Enterprise Architectural Patterns, Enterprise Integration Patterns, and Microservices.
+This repository is served as a teaching materials for **Software Architecture Design** which will focus on Enterprise Architectural Patterns, Enterprise Integration Patterns, and Microservices.
 
 Topics include:
 1. Design Patterns (GoF)

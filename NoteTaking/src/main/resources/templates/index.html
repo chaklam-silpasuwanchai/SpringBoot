@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Spring Session</title>
+</head>
+<body>
+	<div>
+		<form th:action="@{/note}" method="post">
+			<textarea name="description" cols="40" rows="2"></textarea>
+			<br> <input type="submit" value="Save Note" />
+		</form>
+	</div>
+	<div>
+		<h2>Notes</h2>
+		<ul th:each="n : ${notes}">
+			<li th:utext="${n.description}">note</li>
+		</ul>
+	</div>
+</body>
+</html>

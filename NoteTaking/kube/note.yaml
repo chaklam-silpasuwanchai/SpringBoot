@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: note
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: note
+  template:
+    metadata:
+      labels:
+        app: note
+    spec:
+      containers:
+        - name: note
+          image: chaklam/note-java:1.0.0
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: note
+spec:
+  selector:
+    app: note
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30001
+  type: LoadBalancer

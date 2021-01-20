@@ -4,6 +4,8 @@ I have created a repository for demonstrating basic concepts of Spring Boot.
 
 This repository is served as a teaching materials for **Software Architecture Design** which will focus on Enterprise Architectural Patterns, Enterprise Integration Patterns, and Microservices.
 
+**Important Notes**: The lab manuals may be outdated after a while, since most of these libraries version update every 6 months ago.  Most of these manuals should work fine, but feel free to update these dependencies to its latest version.
+
 Topics include:
 1. Design Patterns (GoF)
 2. MVC and Restful apis (a quick recap)

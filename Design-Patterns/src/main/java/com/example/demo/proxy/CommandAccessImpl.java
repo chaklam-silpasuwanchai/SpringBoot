@@ -1,4 +1,4 @@
-package com.example.demo.pattern.proxy;
+package com.example.demo.proxy;
 
 public class CommandAccessImpl implements CommandAccess {
 

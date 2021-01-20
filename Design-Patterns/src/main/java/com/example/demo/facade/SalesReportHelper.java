@@ -1,4 +1,4 @@
-package com.example.demo.pattern.facade;
+package com.example.demo.facade;
 
 import java.sql.Connection;
 import java.util.Date;

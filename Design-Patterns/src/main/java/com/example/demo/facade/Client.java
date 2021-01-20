@@ -1,4 +1,4 @@
-package com.example.demo.pattern.facade;
+package com.example.demo.facade;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package com.example.demo.pattern.proxy;
+package com.example.demo.proxy;
 
 import java.io.BufferedReader;
 import java.io.IOException;

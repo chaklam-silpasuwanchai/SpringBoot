@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true">
+
+	<diskStore path="java.io.tmpdir/ehcache" />
+
+	<defaultCache maxEntriesLocalHeap="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="10" diskSpoolBufferSizeMB="30"
+		maxEntriesLocalDisk="10000000" diskExpiryThreadIntervalSeconds="120"
+		memoryStoreEvictionPolicy="LRU" statistics="true">
+		<persistence strategy="localTempSwap" />
+	</defaultCache>
+	
+	<cache name="employee" maxEntriesLocalHeap="10000" eternal="false"
+		timeToIdleSeconds="5" timeToLiveSeconds="10">
+		<persistence strategy="localTempSwap" />
+	</cache>
+		
+</ehcache>
+
+<!-- 
+
+DiskStore: EHCache stores data into memory but when it starts overflowing, 
+it start writing data into file system. We use this property to define 
+the location where EHCache will write the overflown data.
+
+defaultCache: It’s a mandatory configuration, it is used when an Object 
+need to be cached and there are no caching regions defined for that.
+
+cache name=”employee”: We can cache element to define the region (e.g.,
+@Cache(usage....., region = "employee") and it’s 
+configurations. We can define multiple regions and their properties, 
+while defining model beans cache properties, we can also define region 
+with caching strategies. The cache properties are easy to understand 
+and clear with the name.
+
+-->
+

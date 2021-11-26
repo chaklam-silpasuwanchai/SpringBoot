@@ -4,6 +4,8 @@ I have created a repository for demonstrating basic concepts of Spring Boot.
 
 This repository is served as a teaching materials for **Software Architecture Design** which will focus on Enterprise Architectural Patterns, Enterprise Integration Patterns, and Microservices.
 
+This github is best used with the lab step-by-step guides: https://drive.google.com/drive/folders/13fDG9ui4xQ7_zKUgBbxWePZLE97MuXvY?usp=sharing
+
 **Important Notes**: The lab manuals may be outdated after a while, since most of these libraries version update every 6 months ago.  Most of these manuals should work fine, but feel free to update these dependencies to its latest version.
 
 Topics include:
